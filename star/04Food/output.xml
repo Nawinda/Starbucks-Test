@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20180910 17:16:05.275">
+<suite id="s1" name="Food List" source="C:\Users\nawinda\project\vare\star\04Food\Food List.robot">
+<test id="s1-t1" name="SWEET CONFECTIONS Test">
+<kw name="Open Browser" library="Selenium2Library" type="setup">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.starbucks.co.th/menu-list/food-list/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20180910 17:16:05.400" level="INFO">Opening browser 'Chrome' to base url 'http://www.starbucks.co.th/menu-list/food-list/'.</msg>
+<status status="PASS" starttime="20180910 17:16:05.400" endtime="20180910 17:16:15.004"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Starbucks Food Items | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:16:15.016" level="INFO">Page title is 'Starbucks Food Items | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:16:15.004" endtime="20180910 17:16:15.016"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[1]/article/div[1]/h1/a</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:16:15.016" endtime="20180910 17:16:15.036"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[1]/article/div[1]/h1/a</arg>
+</arguments>
+<msg timestamp="20180910 17:16:15.036" level="INFO">Clicking element '//*[@id="main"]/div/div/div/div/div[1]/article/div[1]/h1/a'.</msg>
+<status status="PASS" starttime="20180910 17:16:15.036" endtime="20180910 17:16:18.041"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>SWEET CONFECTIONS | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:16:18.048" level="INFO">Page title is 'SWEET CONFECTIONS | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:16:18.041" endtime="20180910 17:16:18.048"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${MENU}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:16:18.048" endtime="20180910 17:16:18.067"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Food}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:16:18.067" endtime="20180910 17:16:18.085"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180910 17:16:18.085" endtime="20180910 17:16:20.225"></status>
+</kw>
+<status status="PASS" starttime="20180910 17:16:05.400" endtime="20180910 17:16:20.225" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Show Your Flavor Test">
+<kw name="Open Browser" library="Selenium2Library" type="setup">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.starbucks.co.th/menu-list/food-list/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20180910 17:16:20.225" level="INFO">Opening browser 'Chrome' to base url 'http://www.starbucks.co.th/menu-list/food-list/'.</msg>
+<status status="PASS" starttime="20180910 17:16:20.225" endtime="20180910 17:16:30.186"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Starbucks Food Items | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:16:30.195" level="INFO">Page title is 'Starbucks Food Items | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:16:30.186" endtime="20180910 17:16:30.195"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[2]/article/div[1]/h1/a</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:16:30.195" endtime="20180910 17:16:30.218"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[2]/article/div[1]/h1/a</arg>
+</arguments>
+<msg timestamp="20180910 17:16:30.219" level="INFO">Clicking element '//*[@id="main"]/div/div/div/div/div[2]/article/div[1]/h1/a'.</msg>
+<status status="PASS" starttime="20180910 17:16:30.218" endtime="20180910 17:16:33.278"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>SHOW YOUR FLAVOR | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:16:33.288" level="INFO">Page title is 'SHOW YOUR FLAVOR | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:16:33.278" endtime="20180910 17:16:33.288"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${MENU}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:16:33.288" endtime="20180910 17:16:33.311"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Food}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:16:33.312" endtime="20180910 17:16:33.337"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180910 17:16:33.337" endtime="20180910 17:16:35.445"></status>
+</kw>
+<status status="PASS" starttime="20180910 17:16:20.225" endtime="20180910 17:16:35.445" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Cakes Test">
+<kw name="Open Browser" library="Selenium2Library" type="setup">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.starbucks.co.th/menu-list/food-list/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20180910 17:16:35.445" level="INFO">Opening browser 'Chrome' to base url 'http://www.starbucks.co.th/menu-list/food-list/'.</msg>
+<status status="PASS" starttime="20180910 17:16:35.445" endtime="20180910 17:16:46.135"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Starbucks Food Items | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:16:46.147" level="INFO">Page title is 'Starbucks Food Items | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:16:46.136" endtime="20180910 17:16:46.147"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[3]/article/div[1]/h1/a</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:16:46.147" endtime="20180910 17:16:46.166"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[3]/article/div[1]/h1/a</arg>
+</arguments>
+<msg timestamp="20180910 17:16:46.166" level="INFO">Clicking element '//*[@id="main"]/div/div/div/div/div[3]/article/div[1]/h1/a'.</msg>
+<status status="PASS" starttime="20180910 17:16:46.166" endtime="20180910 17:16:49.592"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Cakes | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:16:49.599" level="INFO">Page title is 'Cakes | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:16:49.593" endtime="20180910 17:16:49.599"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${MENU}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:16:49.599" endtime="20180910 17:16:49.619"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Food}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:16:49.619" endtime="20180910 17:16:49.635"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180910 17:16:49.635" endtime="20180910 17:16:51.741"></status>
+</kw>
+<status status="PASS" starttime="20180910 17:16:35.445" endtime="20180910 17:16:51.741" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Pastries Test">
+<kw name="Open Browser" library="Selenium2Library" type="setup">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.starbucks.co.th/menu-list/food-list/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20180910 17:16:51.741" level="INFO">Opening browser 'Chrome' to base url 'http://www.starbucks.co.th/menu-list/food-list/'.</msg>
+<status status="PASS" starttime="20180910 17:16:51.741" endtime="20180910 17:17:02.374"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Starbucks Food Items | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:17:02.393" level="INFO">Page title is 'Starbucks Food Items | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:17:02.374" endtime="20180910 17:17:02.393"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[4]/article/div[1]/h1/a</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:02.394" endtime="20180910 17:17:02.434"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[4]/article/div[1]/h1/a</arg>
+</arguments>
+<msg timestamp="20180910 17:17:02.434" level="INFO">Clicking element '//*[@id="main"]/div/div/div/div/div[4]/article/div[1]/h1/a'.</msg>
+<status status="PASS" starttime="20180910 17:17:02.434" endtime="20180910 17:17:04.075"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Pastries | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:17:04.085" level="INFO">Page title is 'Pastries | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:17:04.075" endtime="20180910 17:17:04.085"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${MENU}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:04.086" endtime="20180910 17:17:04.106"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Food}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:04.106" endtime="20180910 17:17:04.126"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180910 17:17:04.126" endtime="20180910 17:17:06.233"></status>
+</kw>
+<status status="PASS" starttime="20180910 17:16:51.741" endtime="20180910 17:17:06.233" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Sandwiches Test">
+<kw name="Open Browser" library="Selenium2Library" type="setup">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.starbucks.co.th/menu-list/food-list/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20180910 17:17:06.233" level="INFO">Opening browser 'Chrome' to base url 'http://www.starbucks.co.th/menu-list/food-list/'.</msg>
+<status status="PASS" starttime="20180910 17:17:06.233" endtime="20180910 17:17:16.839"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Starbucks Food Items | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:17:16.850" level="INFO">Page title is 'Starbucks Food Items | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:17:16.839" endtime="20180910 17:17:16.850"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[5]/article/div[1]/h1/a</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:16.850" endtime="20180910 17:17:16.873"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[5]/article/div[1]/h1/a</arg>
+</arguments>
+<msg timestamp="20180910 17:17:16.873" level="INFO">Clicking element '//*[@id="main"]/div/div/div/div/div[5]/article/div[1]/h1/a'.</msg>
+<status status="PASS" starttime="20180910 17:17:16.873" endtime="20180910 17:17:19.407"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Sandwiches | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:17:19.420" level="INFO">Page title is 'Sandwiches | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:17:19.407" endtime="20180910 17:17:19.421"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${MENU}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:19.421" endtime="20180910 17:17:19.463"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Food}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:19.463" endtime="20180910 17:17:19.495"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180910 17:17:19.495" endtime="20180910 17:17:21.624"></status>
+</kw>
+<status status="PASS" starttime="20180910 17:17:06.233" endtime="20180910 17:17:21.624" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Savories Test">
+<kw name="Open Browser" library="Selenium2Library" type="setup">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.starbucks.co.th/menu-list/food-list/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20180910 17:17:21.624" level="INFO">Opening browser 'Chrome' to base url 'http://www.starbucks.co.th/menu-list/food-list/'.</msg>
+<status status="PASS" starttime="20180910 17:17:21.624" endtime="20180910 17:17:30.346"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Starbucks Food Items | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:17:30.359" level="INFO">Page title is 'Starbucks Food Items | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:17:30.347" endtime="20180910 17:17:30.359"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[6]/article/div[1]/h1/a</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:30.359" endtime="20180910 17:17:30.391"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[6]/article/div[1]/h1/a</arg>
+</arguments>
+<msg timestamp="20180910 17:17:30.391" level="INFO">Clicking element '//*[@id="main"]/div/div/div/div/div[6]/article/div[1]/h1/a'.</msg>
+<status status="PASS" starttime="20180910 17:17:30.391" endtime="20180910 17:17:32.191"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Savories | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:17:32.201" level="INFO">Page title is 'Savories | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:17:32.191" endtime="20180910 17:17:32.201"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${MENU}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:32.201" endtime="20180910 17:17:32.224"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Food}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:32.224" endtime="20180910 17:17:32.247"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180910 17:17:32.247" endtime="20180910 17:17:34.349"></status>
+</kw>
+<status status="PASS" starttime="20180910 17:17:21.624" endtime="20180910 17:17:34.349" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Yogurt Test">
+<kw name="Open Browser" library="Selenium2Library" type="setup">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.starbucks.co.th/menu-list/food-list/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20180910 17:17:34.349" level="INFO">Opening browser 'Chrome' to base url 'http://www.starbucks.co.th/menu-list/food-list/'.</msg>
+<status status="PASS" starttime="20180910 17:17:34.349" endtime="20180910 17:17:50.081"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Starbucks Food Items | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:17:50.095" level="INFO">Page title is 'Starbucks Food Items | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:17:50.082" endtime="20180910 17:17:50.096"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[7]/article/div[1]/h1/a</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:50.096" endtime="20180910 17:17:50.124"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div/div/div/div[7]/article/div[1]/h1/a</arg>
+</arguments>
+<msg timestamp="20180910 17:17:50.125" level="INFO">Clicking element '//*[@id="main"]/div/div/div/div/div[7]/article/div[1]/h1/a'.</msg>
+<status status="PASS" starttime="20180910 17:17:50.125" endtime="20180910 17:17:53.195"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Yogurt | Starbucks Coffee Company</arg>
+</arguments>
+<msg timestamp="20180910 17:17:53.211" level="INFO">Page title is 'Yogurt | Starbucks Coffee Company'.</msg>
+<status status="PASS" starttime="20180910 17:17:53.195" endtime="20180910 17:17:53.211"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${MENU}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:53.211" endtime="20180910 17:17:53.248"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Food}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 17:17:53.248" endtime="20180910 17:17:53.284"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180910 17:17:53.284" endtime="20180910 17:17:55.451"></status>
+</kw>
+<status status="PASS" starttime="20180910 17:17:34.349" endtime="20180910 17:17:55.451" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180910 17:16:05.275" endtime="20180910 17:17:55.454"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0">Critical Tests</stat>
+<stat pass="7" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" id="s1" name="Food List">Food List</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
